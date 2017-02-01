@@ -7,20 +7,24 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 
 public class App
 {
+    public static final String THINGFACE_HOST = "xyz.thingface.io";
+    public static final int THINGFACE_PORT = 8883;
+    public static final String THINGFACE_DEVICE_ID = "your_device_id";
+    public static final String THINGFACE_DEVICE_SECRET = "your_device_secret";
+
     public static void main(String[] args) throws IOException, KeyManagementException, NoSuchAlgorithmException, MqttException
     {
-        //DeviceExample device = new DeviceExample("xyz.thingface.io", 8883, "your_device_id", "your_device_secret");
         DeviceExample device = new DeviceExample(
-            "dev-app.thingface.io", 
-            8883, 
-            "mydevice", 
-            "TpNnrNzeUbx7WD1WwTzmDQYANgz9FP"
+            THINGFACE_HOST,
+            THINGFACE_PORT,
+            THINGFACE_DEVICE_ID,
+            THINGFACE_DEVICE_SECRET
         );
-        
+
         device.run();
-        
+
         System.in.read();
-        
+
         device.stop();
     }
 }
