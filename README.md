@@ -11,7 +11,7 @@ Take an inspiration and feel free to clone this repository and modify it as you 
 
 # How to run
 - Download or clone this repository to your PC
-- Setup constants `THINGFACE_HOST`, `THINGFACE_DEVICE_ID` and `THINGFACE_DEVICE_SECRET` in [App.java](src/main/jave/io/thingface/examples/App.java)
+- Setup constants `THINGFACE_HOST`, `THINGFACE_DEVICE_ID` and `THINGFACE_DEVICE_SECRET` in [App.java](src/main/java/io/thingface/examples/App.java)
 - Build `mvn package` and run `mvn exec:java`
 
 # More information
